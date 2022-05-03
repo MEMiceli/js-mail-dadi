@@ -14,9 +14,10 @@ let mailUtente = prompt("Inserire la tua email");
 
 if (mailUtente = iscritti){
     console.log("Autorizzato");
-{else (mailUtente != iscritti){
+}
+else (mailUtente != iscritti)
     console.log("Non Autorizzato")
     let newEmail = prompt("Inserire nuova email");
     iscritti.push("newEmail");
-}
+
 
