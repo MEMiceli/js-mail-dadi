@@ -16,16 +16,17 @@ for (let i = 0; i < iscritti.length; i++) {
 
 // accesso consentito / accesso negato
 
-    if (mailUtente === iscritti[0]){
+    if (mailUtente === iscritti[i]){
         console.log("Autorizzato");
     }
-    else if (mailUtente != iscritti[0]){
+    else if (mailUtente != iscritti[i]){
         console.log("Non Autorizzato")
-        let newEmail = prompt("Inserire nuova email");
-        iscritti.push("newEmail");
+        // let newEmail = prompt("Inserire nuova email");
+        // iscritti.push("newEmail"); da riprendere
     }
     
 }
+
 
 
 
