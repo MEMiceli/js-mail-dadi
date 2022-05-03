@@ -16,10 +16,10 @@ for (let i = 0; i < iscritti.length; i++) {
 
 // accesso consentito / accesso negato
 
-    if (mailUtente === iscritti[i]){
+    if (mailUtente === iscritti[0]){
         console.log("Autorizzato");
     }
-    else if (mailUtente != i){
+    else if (mailUtente != iscritti[0]){
         console.log("Non Autorizzato")
         let newEmail = prompt("Inserire nuova email");
         iscritti.push("newEmail");
