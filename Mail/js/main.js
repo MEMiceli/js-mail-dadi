@@ -11,21 +11,32 @@ const iscritti = ['1email@dominio.it','2email@dominio.it','3email@dominio.it'];
 let mailUtente = prompt("Inserire la tua email");
 
 // controllare l'email è presente
+let trovato = false;
 
 for (let i = 0; i < iscritti.length; i++) {
 
 // accesso consentito / accesso negato
 
     if (mailUtente === iscritti[i]){
+        trovato = true;
         console.log("Autorizzato");
     }
-    else if (mailUtente != iscritti[i]){
-        console.log("Non Autorizzato")
-        // let newEmail = prompt("Inserire nuova email");
-        // iscritti.push("newEmail"); da riprendere
-    }
+    // else if (mailUtente != iscritti[i]){
+    //     console.log("Non Autorizzato")
+    //     // let newEmail = prompt("Inserire nuova email");
+    //     // iscritti.push("newEmail");
+    // }
     
 }
+if ( trovato ){
+        console.log("Non Autorizzato")
+        // let newEmail = prompt("Inserire nuova email");
+        // iscritti.push("newEmail");
+    }
+else {
+    console.log("Non Autorizzato")
+}
+
 
 
 
